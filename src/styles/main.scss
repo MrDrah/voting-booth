@@ -1,0 +1,46 @@
+.flexDashboardParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.dashboard {
+  width: 80%;
+  margin-left: 20%;
+  min-height: 100vh;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.hamburger,
+.createPollMobile {
+  display: none;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 40px;
+  padding-top: 2px;
+  min-width: 50px;
+  min-height: 50px;
+  color: $white;
+  background: $btnBgColour;
+  border-radius: 50%;
+  border: 2px solid $btnBorderColour;
+  box-shadow: 2px 2px 2px $bgColour;
+  &:hover {
+    background: $btnHoverBg;
+    border: 2px solid $btnHoverBorder;
+  }
+  &:active {
+    background: $btnActiveBg;
+    color: $btnActiveColour;
+  }
+}
+.hamburger {
+  position: fixed;
+}
+.createPollMobile {
+  position: absolute;
+  margin: 10px 10px 10px 80px;
+  padding: 8px;
+}

@@ -1,0 +1,136 @@
+.createPoll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto 40px auto;
+  background: $white;
+  border: 2px solid $accentColour;
+  box-shadow: 2px 2px 4px $bgColour;
+  border-radius: 20px;
+  padding: 10px;
+  form {
+    background: $white;
+    border-radius: 5px;
+    padding: 35px;
+  }
+  h2 {
+    margin: 10px 0;
+  }
+}
+input {
+  height: 40px;
+  border: 2px solid $accentColour;
+  font-family: $fontBase;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.addPollButton,
+.resetForm {
+  cursor: pointer;
+  background: $btnBgColour;
+  color: $btnColour;
+  font-family: $fontBase;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  width: 40%;
+  transition: ease all 0.15s;
+  border: 2px solid $btnBorderColour;
+  margin: 10px 0;
+
+  &:hover {
+    background: $btnHoverBg;
+    border: 2px solid $btnHoverBorder;
+  }
+  &:active {
+    background: $btnActiveBg;
+    color: $btnActiveColour;
+  }
+}
+// this needs to be cleaned up still
+.createPollButton {
+  text-align: center;
+  margin: 40px auto 20px auto;
+  font-family: $fontBase;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-left: 10%;
+  background: $btnBgColour;
+  color: $btnColour;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  border: 2px solid $btnBorderColour;
+  box-shadow: 2px 2px 3px $bgColour;
+  transition: ease all 0.15s;
+
+  cursor: pointer;
+  line-height: 0;
+  &:hover {
+    background: $btnHoverBg;
+    border: 2px solid $btnHoverBorder;
+  }
+  &:active {
+    background: $btnActiveBg;
+    color: $btnActiveColour;
+  }
+}
+
+.thanksPopup {
+  text-align: center;
+  background: $white;
+  border-radius: 20px;
+  border: 2px solid $accentColour;
+  box-shadow: 2px 2px 3px $bgColour;
+  padding: 30px 35px 20px 35px;
+  margin: 20px auto 40px auto;
+
+  button {
+    margin-top: 25px;
+  }
+}
+
+// Sweet Alert Styles
+.swal2-popup {
+  width: 55em !important;
+  padding: 3.5em !important;
+  border: 2px solid $accentColour !important;
+  border-radius: 20px !important;
+}
+
+.swal2-icon.swal2-error.swal2-icon-show {
+  font-size: 2rem !important;
+}
+
+[class^="swal2"] {
+  .swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
+    background-color: $accentColour !important;
+  }
+}
+
+.swal2-icon.swal2-error {
+  border-color: $accentColour !important;
+}
+
+h2.swal2-title {
+  font-size: 3rem;
+  color: $primaryColour;
+}
+
+.swal2-content {
+  font-size: 1.8rem !important;
+}
+
+.swal2-styled.swal2-confirm {
+  font-size: 1.6em !important;
+  font-weight: bold !important;
+  border: 2px solid $btnBorderColour !important;
+  background-color: $btnBgColour !important;
+}

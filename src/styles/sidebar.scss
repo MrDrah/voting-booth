@@ -1,0 +1,38 @@
+.sideBar {
+  font-family: $fontHeader;
+  background-color: $bgColour;
+  width: 20%; // set width to 20% to try to flex these two sections next to each other (sidebar and dash)
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  padding-top: 30px;
+  font-size: 1.5rem;
+
+  .sideBarLinks {
+    color: $white;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px auto;
+    font-family: $fontBase;
+    background: $primaryColour;
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    padding-top: 8px;
+    border: 2px solid $btnBorderColour;
+    transition: ease all 0.15s;
+    cursor: pointer;
+
+    &:hover {
+      background: $btnHoverBg;
+      border: 2px solid $btnHoverBorder;
+    }
+    &:active {
+      background: $btnActiveBg;
+      color: $btnActiveColour;
+    }
+  }
+}
